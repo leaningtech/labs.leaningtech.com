@@ -91,6 +91,13 @@ export default defineConfig({
 			],
 		],
 	},
+	i18n: {
+		locales: ["en", "jp"],
+		defaultLocale: "en",
+		fallback: {
+			jp: "en",
+		},
+	},
 	compressHTML: prod,
 	build: {
 		format: "file",
